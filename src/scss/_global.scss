@@ -7,6 +7,28 @@ body {
 }
 .wrapper {
   background: v.$gradient-supersoft;
+  position: relative;
+  border-radius: 0 0 v.$rounded-md v.$rounded-md;
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 20px;
+    right: 20px;
+    height: 10px;
+    background: #cacadb;
+    border-radius: 0 0 12px 12px;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 40px;
+    right: 40px;
+    height: 10px;
+    background: #e7e7f2;
+    border-radius: 0 0 12px 12px;
+  }
 }
 
 .container {
