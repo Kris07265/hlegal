@@ -1,0 +1,115 @@
+@use "vars" as v;
+
+.footer {
+  background: v.$bg-color;
+  padding: 62px 0 30px;
+  text-align: center;
+  // .footer__container
+
+  &__container {
+    @media screen and (min-width: v.$breakpoint-md) {
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+
+  // .footer__adress
+
+  &__adress {
+    @media screen and (min-width: v.$breakpoint-md) {
+      flex: 1 1 50%;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // .footer__adress-desc
+
+  &__adress-desc {
+    font-size: 16px;
+    color: v.$main-color;
+  }
+
+  // .footer__adress-link
+
+  &__adress-link {
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 12px;
+    color: v.$regular-color;
+    @media screen and (min-width: v.$breakpoint-md) {
+      margin-top: 0;
+    }
+  }
+
+  // .footer__contacts
+
+  &__contacts {
+    margin-top: 21px;
+    @media screen and (min-width: v.$breakpoint-md) {
+      order: 1;
+      flex: 1 1 100%;
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  // .footer__contacts-logo
+
+  &__contacts-logo {
+    width: 38px;
+    height: 38px;
+    display: inline-block;
+    @media screen and (min-width: v.$breakpoint-md) {
+      margin-top: 0;
+    }
+    svg {
+      width: 38px;
+      height: 38px;
+      fill: v.$regular-color;
+    }
+  }
+  &__contacts-tel {
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: v.$alt-color;
+    @media screen and (min-width: v.$breakpoint-md) {
+      margin-top: 0;
+    }
+  }
+
+  &__contacts-email {
+    margin-top: 10px;
+    display: block;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: v.$regular-color;
+    @media screen and (min-width: v.$breakpoint-md) {
+      margin-top: 0;
+    }
+  }
+
+  // .footer__copyright
+
+  &__copyright {
+    margin-top: 30px;
+    @media screen and (min-width: v.$breakpoint-md) {
+      flex: 1 1 50%;
+      margin-top: 0;
+    }
+    p {
+      font-size: 16px;
+      color: v.$text-color;
+    }
+  }
+}
