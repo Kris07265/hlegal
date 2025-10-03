@@ -4,6 +4,20 @@
   background: v.$bg-color;
   padding: 62px 0 30px;
   text-align: center;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    right: 30px;
+    height: 2px;
+    background: v.$separator-color;
+    @media screen and (min-width: v.$breakpoint-md) {
+      left: 60px;
+      right: 60px;
+    }
+  }
   // .footer__container
 
   &__container {
@@ -20,7 +34,6 @@
       flex: 1 1 50%;
       display: flex;
       gap: 10px;
-      justify-content: center;
       align-items: center;
     }
   }
@@ -55,7 +68,6 @@
       flex: 1 1 100%;
       display: flex;
       gap: 10px;
-      justify-content: center;
       align-items: center;
     }
   }
@@ -106,6 +118,7 @@
     @media screen and (min-width: v.$breakpoint-md) {
       flex: 1 1 50%;
       margin-top: 0;
+      text-align: right;
     }
     p {
       font-size: 16px;
