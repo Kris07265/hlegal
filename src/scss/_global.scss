@@ -9,6 +9,7 @@ body {
   background: v.$gradient-supersoft;
   position: relative;
   border-radius: 0 0 v.$rounded-md v.$rounded-md;
+  margin-bottom: 80px;
   &::after {
     content: "";
     position: absolute;

@@ -1,4 +1,25 @@
+import Swiper from "swiper";
+import { Pagination, Autoplay } from "swiper/modules";
+
+import "swiper/css";
+import "swiper/css/pagination";
+
 import "../scss/style.scss";
+
+const teamSwiper = new Swiper(".team__swiper", {
+  modules: [Pagination, Autoplay],
+  loop: true,
+  spaceBetween: 30,
+
+  pagination: {
+    el: ".team__swiper-pagination",
+    clickable: true,
+  },
+
+  autoplay: {
+    delay: 2000,
+  },
+});
 
 (() => {
   const burgerButton = document.querySelector(".header__box-burger");

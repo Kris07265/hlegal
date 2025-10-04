@@ -43,6 +43,10 @@
   &__adress-desc {
     font-size: 16px;
     color: v.$main-color;
+    cursor: pointer;
+    &:hover {
+      color: v.$accent-color;
+    }
   }
 
   // .footer__adress-link
@@ -85,6 +89,9 @@
       width: 38px;
       height: 38px;
       fill: v.$regular-color;
+      &:hover {
+        fill: v.$accent-color;
+      }
     }
   }
   &__contacts-tel {
@@ -94,6 +101,9 @@
     font-weight: 700;
     font-size: 16px;
     color: v.$alt-color;
+    &:hover {
+      color: v.$accent-color;
+    }
     @media screen and (min-width: v.$breakpoint-md) {
       margin-top: 0;
     }
@@ -106,6 +116,9 @@
     font-weight: 700;
     font-size: 16px;
     color: v.$regular-color;
+    &:hover {
+      color: v.$accent-color;
+    }
     @media screen and (min-width: v.$breakpoint-md) {
       margin-top: 0;
     }

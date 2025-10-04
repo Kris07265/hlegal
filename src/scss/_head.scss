@@ -25,6 +25,13 @@
     border: 2px solid v.$white-color;
     position: relative;
     margin: 0 auto 30px;
+    &:hover {
+      border: 2px solid v.$accent-color;
+      &::before {
+        border-bottom: 2px solid v.$accent-color;
+        border-right: 2px solid v.$accent-color;
+      }
+    }
 
     &::before {
       content: "";
@@ -90,7 +97,7 @@
     border-radius: v.$rounded-sm;
 
     &:hover {
-      background: v.$accent-hover-color;
+      background: rgba(255, 255, 255, 0.2);
     }
 
     &.active {
@@ -104,6 +111,10 @@
     @media screen and (min-width: v.$breakpoint-md) {
       display: block;
       color: v.$text-color;
+      cursor: pointer;
+      &:hover {
+        color: v.$accent-color;
+      }
     }
   }
 
@@ -111,6 +122,9 @@
     color: v.$white-color;
     font-weight: 700;
     text-decoration: none;
+    &:hover {
+      color: v.$accent-color;
+    }
   }
 
   &__social {
@@ -124,6 +138,9 @@
     width: 24px;
     height: 24px;
     fill: v.$white-color;
+    &:hover {
+      fill: v.$accent-color;
+    }
   }
 
   &__box {
@@ -310,6 +327,12 @@
       border-bottom: 2px solid transparent;
       background: transparent;
       border-radius: 0;
+      &:hover {
+        border-bottom: 2px solid v.$white-color;
+      }
+      &.active {
+        background: v.$accent-color;
+      }
     }
   }
 }
