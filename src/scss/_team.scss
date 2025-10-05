@@ -54,6 +54,19 @@
     font-weight: 700;
     font-weight: 14px;
     text-transform: uppercase;
+    padding-right: 10px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 7px;
+      height: 7px;
+      border-bottom: 2px solid v.$regular-color;
+      border-right: 2px solid v.$regular-color;
+      transform: rotate(-45deg);
+    }
   }
 
   &__slide-inner-title {

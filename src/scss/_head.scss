@@ -164,6 +164,21 @@
   }
 
   &__box-hlegal {
+    svg {
+      width: 12px;
+      height: 26px;
+      @media screen and (min-width: v.$breakpoint-md) {
+        width: 21px;
+        height: 47px;
+      }
+    }
+    span {
+      font-size: 20px;
+      color: v.$white-color;
+      @media screen and (min-width: v.$breakpoint-md) {
+        font-size: 36px;
+      }
+    }
   }
 
   &__box-logo {
@@ -331,7 +346,8 @@
         border-bottom: 2px solid v.$white-color;
       }
       &.active {
-        background: v.$accent-color;
+        color: v.$accent-color;
+        border-bottom: 2px solid v.$accent-color;
       }
     }
   }

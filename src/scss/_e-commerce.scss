@@ -1,0 +1,63 @@
+@use "vars" as v;
+
+.e-commerce {
+  padding-top: 30px;
+  text-align: center;
+  @media screen and (min-width: v.$breakpoint-md) {
+    padding-top: 60px;
+  }
+  // .e-commerce__container
+
+  &__container {
+  }
+
+  // .e-commerce__img
+
+  &__img {
+    display: inline-block;
+    padding: 14px;
+    line-height: 10px;
+    background: v.$white-color;
+    border-radius: v.$rounded-lg;
+    width: 92px;
+    height: 92px;
+    svg {
+      width: 64px;
+      height: 64px;
+    }
+  }
+
+  // .e-commerce__title
+
+  &__title {
+    margin-top: 28px;
+    @include v.title;
+    @include v.text-gradient;
+  }
+
+  // .e-commerce__desc
+
+  &__desc {
+    margin-top: 28px;
+    font-size: 19px;
+    color: v.$white-color;
+    line-height: 30px;
+  }
+
+  // .e-commerce__btn
+
+  &__btn {
+    margin-top: 28px;
+    padding: 18px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    color: v.$white-color;
+    background: v.$regular-color;
+    border-radius: v.$rounded-md;
+    box-shadow: 0px 0px 20px 0px #24a3ff80;
+    cursor: pointer;
+    &:hover {
+      background: v.$hover-coolor;
+    }
+  }
+}
