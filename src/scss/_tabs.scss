@@ -50,6 +50,7 @@
     @include v.title;
 
     &:hover {
+      color: v.$accent-color;
     }
 
     &.active {

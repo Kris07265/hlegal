@@ -33,6 +33,13 @@
       border-right: 2px solid v.$regular-color;
       transform: rotate(-45deg);
     }
+    &:hover {
+      color: v.$accent-color;
+      &::after {
+        border-bottom: 2px solid v.$accent-color;
+        border-right: 2px solid v.$accent-color;
+      }
+    }
   }
 
   // .services__title
@@ -92,6 +99,9 @@
       font-size: 22px;
       color: v.$regular-color;
       text-decoration: none;
+      &:hover {
+        color: v.$accent-color;
+      }
     }
   }
 
